@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div class="Cal_wrapper">
+        <div class="container">
+            <form name="Calc">
+               <fieldset>
+                   <legend>Calculator</legend>
+                   <table>
+                       <tr>
+                            <td><input type="text" value="" name="input" size="16"></td>
+                       </tr>
+                   </table>
+                </fieldset> 
+            </form>
+        </div> <!--container close-->
+
+         <div class="container">
+            <div class="numbers_btn">
+                <fieldset>
+                    <legend>Numbers</legend>
+                    <table>
+                        <tr>
+                            <td><input type="button" value="7" name="seven" onclick="Calc.input.value += '7' "></td>
+                            <td><input type="button" value="8" name="eight" onclick="Calc.input.value += '8' "></td>
+                            <td><input type="button" value="9" name="nine"  onclick="Calc.input.value += '9' "></td>
+                        </tr>
+
+                         <tr>
+                            <td><input type="button" value="4" name="four" onclick="Calc.input.value += '4' "></td>
+                            <td><input type="button" value="5" name="five" onclick="Calc.input.value += '5' "></td>
+                            <td><input type="button" value="6" name="six"  onclick="Calc.input.value += '6' "></td>
+                        </tr>
+
+                         <tr>
+                            <td><input type="button" value="1" name="one" onclick="Calc.input.value += '1' "></td>
+                            <td><input type="button" value="2" name="two" onclick="Calc.input.value += '2' "></td>
+                            <td><input type="button" value="3" name="three" onclick="Calc.input.value += '3' "></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="button" value="." name="dot" onclick="Calc.input.value += '.'"></td>
+                            <td><input type="button" value="0" name="zero" onclick="Calc.input.value += '0' "></td>
+                            <td><input type="button" value="=" name="doit" onclick="Calc.input.value = eval(Calc.input.value)"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div> <!--numbers_btn close-->
+
+            <div class="maths_oprators">
+                <fieldset>
+                    <legend> ope </legend>
+                    <table>
+                        <tr>
+                            <td><input type="button" value="/" name="div" onclick="Calc.input.value += '/' "></td>
+                        </tr>
+
+                         <tr>
+                            <td><input type="button" value="x" name="time" onclick="Calc.input.value += '*' "></td>
+                        </tr>
+
+                         <tr>
+                            <td><input type="button" value="-" name="minus" onclick="Calc.input.value += '-' "></td>
+                        </tr> 
+
+                         <tr>
+                            <td><input type="button" value="+" name="plus" onclick="Calc.input.value += '+' "></td>
+                        </tr>  
+
+                        <tr>
+                            <td><input type="button" value="C" name="clear" onclick="Calc.input.value = '' "></td>
+                        </tr> 
+
+                    </table>
+                </fieldset>
+            </div> <!--maths_oprators close-->
+            <div class="clear"></div>
+        </div> <!--container close-->
+    </div> <!--Cal_wrapper close-->
+    
+</body>
+</html>
+  
